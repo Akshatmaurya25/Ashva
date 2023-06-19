@@ -1,0 +1,483 @@
+<html>
+    <head></head>
+    <title>Internships</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'poppins', sans-serif;
+            scroll-behavior: smooth;
+            list-style: none;
+            text-decoration: none;
+        }
+        .all{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            height: 130vh;
+            background: #fff;
+            display: flex;
+            
+        }
+        .all h1{
+
+        }
+        .imagecard{
+            display: flex;
+            flex-direction: row;
+            margin: 20 30 20 10;
+            width: ;
+            align-items: center;
+        }
+        .imagecard img{
+            width: 23.3vw;
+            height: 30.8vh;
+            margin: 0 0 0 20;
+        }
+        .imagecard1{
+            display: flex;
+            flex-direction: row;
+            
+
+        }
+        .internshipcard{
+            width: 100%;
+            margin: 10 30 10 30;
+            
+            
+        }
+        .headingintern{
+            text-align: center;
+            margin-top: 30;
+            background-color: #ebebeb;
+            width: 100%;
+            
+        }
+        
+        
+        .intern1{
+            display: flex;
+            flex-direction: row;
+            background-color:#ebebeb;
+            margin: 20 0 20 0;
+            align-items: center;
+            
+            
+        }
+        .internmob{
+            display: flex;
+            flex-direction: row;
+        }
+        .intern2{
+            display: flex;
+            flex-direction: column;
+            background-color:#fff ;
+            width: 21.3vw;
+            margin: 20 20 20 20;
+            align-items: center;
+            border-radius: 30px;
+            
+            
+        }
+        .intern3{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 10;
+            
+        }
+        
+        
+        .intern3 img{
+            width:19.3vw ;
+            height: 30.8vh;
+            
+            
+            
+        }
+        .uturn1{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+        }
+        .uturnhead{
+            text-align: center;
+            margin-top: 30;
+            background-color: #ebebeb;
+            width: 100%;
+            
+
+        }
+        .careers{
+            margin: 10 10 30 30;
+            padding: 20 20 30 30;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            width: 90vw;
+            background: #e9eaed;
+            border-radius: 20px;
+            
+           
+        }
+        .career{
+            width: 35vw;
+            height: 300px;
+            border-radius: 20px;
+            margin: 10 10;
+        }
+        .careers button{
+            background: #F7FB1D;
+            color:  black;
+            height: 50px;
+            width: 100px;
+            border-radius: 50px;
+            border-style: none;
+            margin: 20 10 10 10;
+            font-size: medium;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+            bottom: 0;
+            
+        }
+        .careers p{
+            margin: 0 50 0 0;
+        }
+        .careers h1{
+            margin: 10 10;
+        }
+        .careers a{
+            color: #fff2f2;
+            
+            font-size: medium;
+        }
+        .careers button:hover{
+            transform: scale(1.1);
+            transition: 1s;
+            background: #a3a513;
+            border-color: 2px solid #F7FB1D ;
+        }
+        .firstbox{
+            display: flex;
+            flex-direction: column;
+        }
+        .details{
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+        }
+        .details h2{
+            margin: 20 20 20 20;
+        }
+        .details ol {
+            list-style-type: square;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: ;
+            
+        }
+        .price h1{
+            color: red;
+        }
+        .price h2{
+            text-decoration: line-through;
+        }
+        .price h3{
+            color: green;
+        }
+        .heading{
+            margin: 20 0 0 0;
+            background-color: #F7FFC6;
+            width: 100%;
+            color: #95acf0;
+        }
+        .heading2{
+            margin: 0 0 20 0;
+            background-color: #F7FFC6;
+            width: 100%;
+            color: #95acf0;
+        }
+        hr{
+            width: 100%;
+            height: 5px;
+            background-color: black;
+        }
+        @media (max-width: 1260px){
+            .imagecard{
+            display: flex;
+            flex-direction: column;
+            margin: 50 50 50 50;
+            }
+            .imagecard img{
+            width: 45.3vw;
+            height: 30.8vh;
+            margin: 0 0 0 20;
+            }
+            .imagecard1{
+            display: flex;
+            flex-direction: row;
+            margin: 20 20 20 20;
+
+            }
+
+            .internshipcard{
+            width: 100%;
+            
+            
+            
+            }
+            .internmob{
+            display: flex;
+            flex-direction: column;
+            }
+            .intern1{
+                
+                justify-content: center;
+            }
+            .intern2{
+            display: flex;
+            flex-direction: column;
+            background-color:#fff ;
+            width: 40.3vw;
+            margin: 20 20 20 20;
+            align-items: center;
+            border-radius: 30px;
+            
+            
+            }
+            .intern3{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 10;
+            font-size: ;
+            
+            }
+            .intern4{
+                font-size: 30;
+            }
+            .intern3 img{
+            width:29.3vw ;
+            height: 30.8vh;
+            
+            
+            
+            }
+            
+
+
+        }
+
+
+    </style>
+    <body>
+        <div class="all">
+            <h1>Make your dream career a reality <hr></h1>
+            <div class="imagecard">
+                <div class="imagecard1">
+                    <a href="contact.html"><img src="first.png" alt=""></a>
+                    <a href="contact.html"><img src="second.png" alt=""></a>
+                </div>
+                <div class="imagecard1">
+                    <a href="contact.html"><img src="third.png" alt=""></a>
+                    <a href="contact.html"><img src="fourth.png" alt=""></a>
+                </div>
+                
+
+            </div>
+            <div class="internshipcard">
+                <div class="headingintern">
+                    <h2>Actively hiring</h2>
+                </div>
+                
+                <div class="intern1">
+                    <div class="internmob">
+                        <div class="intern2">
+                            <div class="intern3">
+                                <img src="int1.png" alt="">
+                                <h2>Talent Acquisition</h2>
+                                <h4>Reliance industries</h4>
+                            </div>
+                            <hr>
+                            <div class="intern3 intern4">
+                                <h5>Delhi</h5>
+                                <h5>INR 5000/-</h5>
+                                <h5>3 month</h5>
+                                <a href="contact.html" style="margin-top: 20;">Know more</a>
+                            </div>
+                            
+
+                        </div>
+                        <div class="intern2">
+                            <div class="intern3">
+                                <img src="int2.png" alt="">
+                                <h2>Field Sales</h2>
+                                <h4>ITC</h4>
+                            </div>
+                            <hr>
+                            <div class="intern3 intern4">
+                                <h5>Mumbai</h5>
+                                <h5>INR 10000/-</h5>
+                                <h5>1 month</h5>
+                                <a href="contact.html" style="margin-top: 20;">Know more</a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="internmob">
+                        <div class="intern2">
+                            <div class="intern3">
+                                <img src="int3.png" alt="">
+                                <h2>Presales Management</h2>
+                                <h4>Tata Motors</h4>
+                            </div>
+                            <hr>
+                            <div class="intern3 intern4">
+                                <h5>pune</h5>
+                                <h5>INR 6000/-</h5>
+                                <h5>6 month</h5>
+                                <a href="contact.html" style="margin-top: 20;">Know more</a>
+                            </div>
+                        </div>
+                        <div class="intern2">
+                            <div class="intern3">
+                                <img src="int4.png" alt="">
+                                <h2>webdeveloper</h2>
+                                <h4>Wipro</h4>
+                            </div>
+                            <hr>
+                            <div class="intern3 intern4">
+                                <h5>Banglore</h5>
+                                <h5>INR 6000/-</h5>
+                                <h5>2 month</h5>
+                                <a href="contact.html" style="margin-top: 20;">Know more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="uturn1">
+                <div class="uturnhead">
+                    <h2>Latest jobs on Ashav</h2></div>
+                    <div class="firstbox">
+                        <div class="careers">
+                            <img src="int5.png" alt="" class="career">
+                            <div class="details">
+                                <h1>Business Development Associate</h1>
+                                
+                                <p>
+                                    
+                                        <h2>BYJU's</h2>
+                                    <ol>    
+                                        <li style="margin: 10 0 0 0;" class="intern4"><img src="https://cdn-icons-png.flaticon.com/512/561/561237.png?w=740&t=st=1687030196~exp=1687030796~hmac=5d7d44df47382a35087e1c5cced2ed20056e76473c595c4ebfd2b3f803e040af"  style="height: 25px; width: 30px; margin-left:20 ; margin-right: 20;" alt="">Banglore</li>
+        
+                                        <li style="margin: 10 0 0 0;" class="intern4"><img src="https://cdn-icons-png.flaticon.com/512/64/64596.png?w=740&t=st=1687030717~exp=1687031317~hmac=490d54e35bd1d4e80b102cb4c190b7fb16f5211330eb8d6bf193773f2a10b1a5"  style="height: 25px; width: 30px; margin-left:20 ; margin-right: 20;">30 june</li>
+                                        <li style="margin: 10 0 0 0;" class="intern4"><img src="https://cdn-icons-png.flaticon.com/512/792/792092.png?w=740&t=st=1687030775~exp=1687031375~hmac=d71e0adf66e4a89ea07e6d0e8da7ef29532adfac7d30f47fc4bef62e97e8535e"  style="height: 25px; width: 30px;margin-left:20 ; margin-right: 20;" alt="">1-3 years</li>
+                                        
+                                    </ol>
+                        
+                                </p>
+                                <a href="contact.html"><button>Contact us</button></a>
+                            </div>  
+                            <div class="price"><h1>INR 8 LPA</h1></div>
+                                
+                        </div>
+                    </div>  
+                                
+                            
+                        </div>
+                        <div class="firstbox">
+                            <div class="careers">
+                                <img src="int6.png" alt="" class="career">
+                                <div class="details">
+                                    <h1>MIS Executive</h1>
+                                    
+                                    <p>
+                                        
+                                            <h2>Saregama India Limited</h2>
+                                        <ol>    
+                                            <li style="margin: 10 0 0 0;" class="intern4"><img src="https://cdn-icons-png.flaticon.com/512/561/561237.png?w=740&t=st=1687030196~exp=1687030796~hmac=5d7d44df47382a35087e1c5cced2ed20056e76473c595c4ebfd2b3f803e040af"  style="height: 25px; width: 30px; margin-left:20 ; margin-right: 20;" alt="">Mumbai</li>
+            
+                                            <li style="margin: 10 0 0 0;" class="intern4"><img src="https://cdn-icons-png.flaticon.com/512/64/64596.png?w=740&t=st=1687030717~exp=1687031317~hmac=490d54e35bd1d4e80b102cb4c190b7fb16f5211330eb8d6bf193773f2a10b1a5"  style="height: 25px; width: 30px; margin-left:20 ; margin-right: 20;">5 july</li>
+                                            <li style="margin: 10 0 0 0;" class="intern4"><img src="https://cdn-icons-png.flaticon.com/512/792/792092.png?w=740&t=st=1687030775~exp=1687031375~hmac=d71e0adf66e4a89ea07e6d0e8da7ef29532adfac7d30f47fc4bef62e97e8535e"  style="height: 25px; width: 30px;margin-left:20 ; margin-right: 20;" alt="">2-3 years</li>
+                                            
+                                        </ol>
+                            
+                                    </p>
+                                    <a href="contact.html"><button>Contact us</button></a>
+                                </div>  
+                                <div class="price">
+                                    <h1>INR 11 LPA</h1>
+                                 </div>
+                            </div>
+                        </div>
+                        <div class="firstbox">
+                            <div class="careers">
+                                <img src="int7.jpg" alt="" class="career">
+                                <div class="details">
+                                    <h1>Inside Sales Associate</h1>
+                                    
+                                    <p>
+                                        
+                                            <h2>Urban company</h2>
+                                        <ol>    
+                                            <li style="margin: 10 0 0 0;" class="intern4"><img src="https://cdn-icons-png.flaticon.com/512/561/561237.png?w=740&t=st=1687030196~exp=1687030796~hmac=5d7d44df47382a35087e1c5cced2ed20056e76473c595c4ebfd2b3f803e040af"  style="height: 25px; width: 30px; margin-left:20 ; margin-right: 20;" alt="">Hyderabad</li>
+            
+                                            <li style="margin: 10 0 0 0;" class="intern4"><img src="https://cdn-icons-png.flaticon.com/512/64/64596.png?w=740&t=st=1687030717~exp=1687031317~hmac=490d54e35bd1d4e80b102cb4c190b7fb16f5211330eb8d6bf193773f2a10b1a5"  style="height: 25px; width: 30px; margin-left:20 ; margin-right: 20;">1 july</li>
+                                            <li style="margin: 10 0 0 0;" class="intern4"><img src="https://cdn-icons-png.flaticon.com/512/792/792092.png?w=740&t=st=1687030775~exp=1687031375~hmac=d71e0adf66e4a89ea07e6d0e8da7ef29532adfac7d30f47fc4bef62e97e8535e"  style="height: 25px; width: 30px;margin-left:20 ; margin-right: 20;" alt="">0-3 years</li>
+                                            
+                                        </ol>
+                            
+                                    </p>
+                                    <a href="contact.html"><button>Contact us</button></a>
+                                </div>  
+                                <div class="price">
+                                    <h1>INR 8 LPA</h1>
+                                 </div>
+                            </div>
+                        </div>
+                        <div class="firstbox">
+                            <div class="careers">
+                                <img src="int8.jpg" alt="" class="career">
+                                <div class="details">
+                                    <h1>Omni Sports Leader - Part Time</h1>
+                                    
+                                    <p>
+                                        
+                                            <h2>Decathlon</h2>
+                                        <ol>    
+                                            <li style="margin: 10 0 0 0;" class="intern4"><img src="https://cdn-icons-png.flaticon.com/512/561/561237.png?w=740&t=st=1687030196~exp=1687030796~hmac=5d7d44df47382a35087e1c5cced2ed20056e76473c595c4ebfd2b3f803e040af"  style="height: 25px; width: 30px; margin-left:20 ; margin-right: 20;" alt="">Hyderabad</li>
+            
+                                            <li style="margin: 10 0 0 0;" class="intern4"><img src="https://cdn-icons-png.flaticon.com/512/64/64596.png?w=740&t=st=1687030717~exp=1687031317~hmac=490d54e35bd1d4e80b102cb4c190b7fb16f5211330eb8d6bf193773f2a10b1a5"  style="height: 25px; width: 30px; margin-left:20 ; margin-right: 20;">1 july</li>
+                                            <li style="margin: 10 0 0 0;" class="intern4"><img src="https://cdn-icons-png.flaticon.com/512/792/792092.png?w=740&t=st=1687030775~exp=1687031375~hmac=d71e0adf66e4a89ea07e6d0e8da7ef29532adfac7d30f47fc4bef62e97e8535e"  style="height: 25px; width: 30px;margin-left:20 ; margin-right: 20;" alt="">0-3 years</li>
+                                            
+                                        </ol>
+                            
+                                    </p>
+                                    <a href="contact.html"><button>Contact us</button></a>
+                                </div>  
+                                <div class="price">
+                                    <h1>INR 2-2.5 LPA</h1>
+                                 </div>
+                            </div>
+                        </div>
+
+
+
+
+
+                            
+        
+                    
+                  
+                
+
+            </div>
+
+            
+        </div>
+    </body>
+</html>

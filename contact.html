@@ -1,0 +1,172 @@
+<html>
+    <head>
+
+    </head>
+    <title>Contact us</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'poppins', sans-serif;
+        }
+        .container{
+            width: 100%;
+            height: 110vh;
+            background: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           
+        }
+        form{
+            background:#d9dbe4;
+            display: flex;
+            flex-direction: column;
+            padding: 2vw  4vw;
+            width: 90%;
+            max-width: 600px;
+            border-radius: 10px;
+            
+        }
+        form h3{
+            color: #555;
+            font-weight: 800;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+        form input, form textarea, form select{
+            border: 0;
+            margin: 10px 0;
+            padding: 20px;
+            outline: none;
+            background: #fff;
+            font-size: 16px;
+
+        }
+        form button{
+            padding: 15px;
+            background: #F7FFC6;
+            color: black;
+            font-size: 18px;
+            border: 0;
+            outline: none;
+            cursor: pointer;
+            width: 150px;
+            margin: 20px auto 0;
+            border-radius: 30px;
+
+        }
+        form label{
+            font-size: 17px;
+            background-color: transparent;
+        }
+        form button:hover{
+            background-color: #F7FB1D;
+            transition: 1s;
+        }
+        @media(max-width: 1260px){
+            .container{
+                height: 100vh;
+                justify-content: center;
+            }
+            form{
+                background:#d9dbe4;
+                display: flex;
+                flex-direction: column;
+                padding: 2vw  4vw;
+                width: 90%;
+                max-width: 900px;
+                border-radius: 10px;
+                justify-content: center;
+
+            }
+            form input, form textarea, form select{
+            
+            font-size: 30px;
+
+            }
+            form label{
+            font-size: 40px;
+            background-color: transparent;
+            }
+            option{
+                font-size: 10px;
+            }
+            select{
+                font-size: 25px;
+            }
+            form button{
+                width: 200px;
+                
+                font-size: 30;
+            }
+            form h3{
+                font-size: 70px;
+                
+            }
+
+        }
+
+    </style>
+    <body>
+        <div class="bgco">
+            <div class="container">
+                <form action="" onsubmit="sendEmail(); reset(); return false">
+                    <h3>Get in touch</h3>
+                    <label for="name">Your name:</label>
+                    <input type="text" id="name" placeholder="Narendra modi" required>
+                    <label for="e-mail">E-mail:</label>
+                    <input type="email" id="email" placeholder="ashva@xyz.com" required>
+                    <label for="number">Phone Number:</label>
+                    <input type="number" id="phone" placeholder="+917123456789" required>
+                    <label for="query">Query related to:</label>
+                    <select name="query" id="query">
+                        <option value="cource">Cources</option>
+                        <option value="internship">Internships</option>
+                        <option value="Counseling">Counseling</option>
+                        <option value="other">Others</option>
+                    </select>
+                    <label for="Message">Message:</label>    
+
+                    <textarea name="" id="message" placeholder="How can we help You?"></textarea>
+                    <button type="submit">Submit</button>
+                    
+                </form>
+            </div>
+        </div>
+    </body>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+                Host : "smtp.elasticemail.com",
+                Username : "falconablogger@gmail.com",
+                Password : "EF2A886606BA8EB1BD2D8DE0CEA49C7D864C",
+                To : document.getElementById("email").value,
+                From : "falconablogger@gmail.com",
+                Subject : "New registration",
+                Body : "hello "+document.getElementById("name").value+" <br> Thank you for choosing Ashav.<br>Our team member will get in touch with you in next 24-48 hours"
+            }).then(
+            message => alert("Query submited")
+            );
+            Email.send({
+                Host : "smtp.elasticemail.com",
+                Username : "falconablogger@gmail.com",
+                Password : "EF2A886606BA8EB1BD2D8DE0CEA49C7D864C",
+                To : 'niped62191@aaorsi.com',
+                From : "falconablogger@gmail.com",
+                Subject : document.getElementById("query").value,
+                Body : "New Contact form enquiry about "+document.getElementById("query").value
+                        +"<br> Name: "+document.getElementById("name").value
+                        +"<br> Query related to: "+document.getElementById("query").value
+                        +"<br> Email: "+document.getElementById("email").value
+                        +"<br> Phone no: "+document.getElementById("phone").value
+                        +"<br> message: "+document.getElementById("message").value
+            });
+        
+        }
+            
+
+    </script>
+</html>
