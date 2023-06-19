@@ -140,30 +140,27 @@
     <script>
         function sendEmail(){
             Email.send({
-                Host : "smtp.elasticemail.com",
-                Username : "falconablogger@gmail.com",
-                Password : "EF2A886606BA8EB1BD2D8DE0CEA49C7D864C",
+                SecureToken : "5300abb7-bd56-4952-b135-5cf24ccd849f",
                 To : document.getElementById("email").value,
                 From : "falconablogger@gmail.com",
-                Subject : "New registration",
-                Body : "hello "+document.getElementById("name").value+" <br> Thank you for choosing Ashav.<br>Our team member will get in touch with you in next 24-48 hours"
+                Subject : "This is the subject",
+                Body : "hello"+document.getElementById("name").value+" <br> Thank you for choosing Ashav.<br>Our team member will get in touch with you in next 24-48 hours"
             }).then(
-            message => alert("Query submited")
+            message => alert(message)
             );
             Email.send({
-                Host : "smtp.elasticemail.com",
-                Username : "falconablogger@gmail.com",
-                Password : "EF2A886606BA8EB1BD2D8DE0CEA49C7D864C",
-                To : 'niped62191@aaorsi.com',
+                SecureToken : "5300abb7-bd56-4952-b135-5cf24ccd849f",
+                To : 'falconmishra@gmail.com',
                 From : "falconablogger@gmail.com",
-                Subject : document.getElementById("query").value,
+                Subject : "This is the subject",
                 Body : "New Contact form enquiry about "+document.getElementById("query").value
-                        +"<br> Name: "+document.getElementById("name").value
-                        +"<br> Query related to: "+document.getElementById("query").value
-                        +"<br> Email: "+document.getElementById("email").value
-                        +"<br> Phone no: "+document.getElementById("phone").value
-                        +"<br> message: "+document.getElementById("message").value
+                            +"<br> Name: "+document.getElementById("name").value
+                            +"<br> Query related to: "+document.getElementById("query").value
+                            +"<br> Email: "+document.getElementById("email").value
+                            +"<br> Phone no: "+document.getElementById("phone").value
+                            +"<br> message: "+document.getElementById("message").value
             });
+            
         
         }
             
